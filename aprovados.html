@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprovados do Servidor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #D9DBF1;
+            color: #0B3948;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background-color: #D0CDD7;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: #ACB0BD;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        th, td {
+            padding: 12px;
+            border: 1px solid #416165;
+        }
+        th {
+            background-color: #416165;
+            color: #D9DBF1;
+        }
+        tr:nth-child(even) {
+            background-color: #D0CDD7;
+        }
+        tr:hover {
+            background-color: #0B3948;
+            color: #D9DBF1;
+        }
+        .btn-voltar {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: #416165;
+            color: #D9DBF1;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .btn-voltar:hover {
+            background-color: #0B3948;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="inicio.html" class="btn-voltar">&#8592; Voltar</a>
+        <h1>Usuario aprovados na ficha</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome do Membro</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Usuário 1</td>
+                    <td>Aprovado</td>
+                </tr>
+                <tr>
+                    <td>Usuário 2</td>
+                    <td>Aprovado</td>
+                </tr>
+                <tr>
+                    <td>Usuário 3</td>
+                    <td>Aprovado</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

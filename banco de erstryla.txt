@@ -1,0 +1,9 @@
+SQL tabela adm de erstryla
+
+CREATE TABLE `erstryla`.`tb_usuario` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `nome_usuario` VARCHAR(45) NOT NULL,
+  `senha_usuario` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`id`));
+
+INSERT INTO `bancodocadastro`.`tb_usuario` (`id`, `nome_usuario`, `senha_usuario`) VALUES ('1', 'erstryla', '2024');

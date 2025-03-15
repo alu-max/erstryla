@@ -1,0 +1,437 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raças - D&D</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #D0CDD7; /* Cor de fundo ajustada */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+}
+
+h2 {
+    color: #ACB0BD; /* Cor do título ajustada */
+    font-size: 24px;
+}
+
+.race {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.race-info {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.race-info p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+hr {
+    border: 1px solid #ACB0BD; /* Cor da linha ajustada */
+    margin: 10px 0;
+}
+
+.race-image {
+    flex: 0 0 150px;
+    height: 150px;
+    overflow: hidden;
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+}
+
+.race-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.image {
+    outline: 2px solid #ffffff;
+    outline-offset: 10px;
+}
+
+/* Adicionando um efeito de hover nos títulos */
+h2:hover {
+    color: #416165; /* Cor do título ao passar o mouse */
+}
+
+/* Alterando a cor do texto no hover das informações das raças */
+.race-info p:hover {
+    color: #0B3948; /* Cor do texto ao passar o mouse */
+}
+
+
+        /* Imagem de topo */
+        .topo {
+            width: 100%;
+            height: 350px;
+            background-image: url('img/estryla\ 2.jpg'); /* Substitua pelo caminho correto */
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Menu */
+        .menu {
+            background-color: #0B3948;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            border: 2px solid #ACB0BD;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .menu a:hover {
+            background-color: #416165;
+            color: #D9DBF1;
+        }
+
+
+    </style>
+
+<div class="topo"></div>
+
+<nav class="menu">
+    <a href="inicio.html">Inicio</a>
+    <a href="raçasvip.html">Raça VIP</a>
+    <a href="lore.html">Lore do Server</a>
+    <a href="classe.html">Classe</a>
+    <a href="classevip.html">Classe VIP</a>
+    <a href="informações.html">Informações</a>
+    
+</nav>
+
+
+    <div class="container">
+        <!-- Anão -->
+        <section class="race">
+            <div class="race-info">
+                <h2>Anão (Dwarf)</h2>
+                <hr>
+                <p><strong>Tempo de vida:</strong> 300 anos</p>
+                <p><strong>Descrição:</strong> Anões são conhecidos por sua robustez, durabilidade e habilidades com metalurgia e pedras. Habitantes de montanhas, valorizam tradições e família, além de serem guerreiros habilidosos.</p>
+                <p><strong>Estimativa de vida:</strong> 290 anos</p>
+                <p><strong>Vagas:</strong> 5</p>
+            </div>
+            <div class="race-image">
+                <img src="img/anão.webp" alt="Anão" class="image">
+            </div>
+        </section>
+
+        <!-- Elfo -->
+        <section class="race">
+            <div class="race-info">
+                <h2>Elfo (Elf)</h2>
+                <hr>
+                <p><strong>Tempo de vida:</strong> 1800 anos</p>
+                <p><strong>Descrição:</strong> Os elfos são graciosos e têm uma afinidade mágica, com longas vidas e conexão com a natureza.</p>
+                <p><strong>Estimativa de vida:</strong> 1500 anos</p>
+                <p><strong>Vagas:</strong> 4</p>
+            </div>
+            <div class="race-image">
+                <img src="img/elfo.jpg" alt="Elfo" class="image">
+            </div>
+        </section>
+
+        <!-- Humano -->
+        <section class="race">
+            <div class="race-info">
+                <h2>Humano (Human)</h2>
+                <hr>
+                <p><strong>Tempo de vida:</strong> 120 anos</p>
+                <p><strong>Descrição:</strong> Os humanos são versáteis e adaptáveis, sem uma característica racial específica. Eles se destacam pela capacidade de aprender rapidamente e pela diversidade cultural.</p>
+                <p><strong>Estimativa de vida:</strong> 40 anos</p>
+                <p><strong>Vagas:</strong> 10</p>
+            </div>
+            <div class="race-image">
+                <img src="img/humano.jpg" alt="Humano" class="image">
+            </div>
+        </section>
+
+        <!-- Dragonborn -->
+        <section class="race">
+            <div class="race-info">
+                <h2>Dragonborn (Draconato)</h2>
+                <hr>
+                <p><strong>Tempo de vida:</strong> 6000 anos</p>
+                <p><strong>Descrição:</strong> Descendentes de dragões, são poderosos e com características reptilianas. Possuem afinidade com um tipo de dragão e habilidades de sopro e resistência elementar.</p>
+                <p><strong>Estimativa de vida:</strong> 5800 anos</p>
+                <p><strong>Vagas:</strong> 8</p>
+            </div>
+            <div class="race-image">
+                <img src="img/dragonborn.jpg" alt="Dragonborn" class="image">
+            </div>
+        </section>
+
+        <!-- Genasi -->
+        <section class="race">
+            <div class="race-info">
+                <h2>Genasi</h2>
+                <hr>
+                <p><strong>Tempo de vida:</strong> 530 anos</p>
+                <p><strong>Descrição:</strong> Descendentes de elementais, com habilidades ligadas ao elemento de seu ancestral.</p>
+                <p><strong>Estimativa de vida:</strong> 400 anos</p>
+                <p><strong>Vagas:</strong> 4</p>
+            </div>
+            <div class="race-image">
+                <img src="img/Genasi.webp" alt="Genasi" class="image">
+            </div>
+        </section>
+
+        <!-- Tritão -->
+        <section class="race">
+            <div class="race-info">
+                <h2>Tritão</h2>
+                <hr>
+                <p><strong>Tempo de vida:</strong> 325 anos</p>
+                <p><strong>Descrição:</strong> Criaturas aquáticas com habilidades de respiração subaquática e controle de criaturas marinhas. São defensores dos oceanos.</p>
+                <p><strong>Estimativa de vida:</strong> 300 anos</p>
+                <p><strong>Vagas:</strong> 7</p>
+            </div>
+            <div class="race-image">
+                <img src="img/tritão.jpg" alt="Tritão" class="image">
+            </div>
+        </section>
+
+        <!-- Vedalken -->
+        <section class="race">
+            <div class="race-info">
+                <h2>Vedalken</h2>
+                <hr>
+                <p><strong>Tempo de vida:</strong> 240 anos</p>
+                <p><strong>Descrição:</strong> Seres inteligentes e lógicos, conhecidos por seu foco em perfeição e sua resistência emocional. São estudiosos e muitas vezes envolvidos em ciência e mágica.</p>
+                <p><strong>Estimativa de vida:</strong> 210 anos</p>
+                <p><strong>Vagas:</strong> 3</p>
+            </div>
+            <div class="race-image">
+                <img src="img/Vedalken.jpg" alt="Vedalken" class="image">
+            </div>
+        </section>
+
+        <!-- Thri-Kreen -->
+        <section class="race">
+            <div class="race-info">
+                <h2>Thri-Kreen</h2>
+                <hr>
+                <p><strong>Tempo de vida:</strong> 5000 anos</p>
+                <p><strong>Descrição:</strong> Insetoides com quatro braços, habilidades de camuflagem. São guerreiros ferozes e possuem uma estrutura social própria.</p>
+                <p><strong>Estimativa de vida:</strong> 3000 anos</p>
+                <p><strong>Vagas:</strong> 6</p>
+            </div>
+            <div class="race-image">
+                <img src="img/Thri-Kreen.jpg" alt="Thri-Kreen" class="image">
+            </div>
+        </section>
+
+        <!-- Dhampir -->
+        <section class="race">
+            <div class="race-info">
+                <h2>Dhampir</h2>
+                <hr>
+                <p><strong>Tempo de vida:</strong> 3000 anos</p>
+                <p><strong>Descrição:</strong> Seres tocados pelo vampirismo, com habilidades de se alimentar de energia vital e sentidos aguçados. Têm habilidades de salto e resistência a certas magias.</p>
+                <p><strong>Estimativa de vida:</strong> 2900 anos</p>
+                <p><strong>Vagas:</strong> 5</p>
+            </div>
+            <div class="race-image">
+                <img src="img/Dhampir.jpg" alt="Dhampir" class="image">
+            </div>
+        </section>
+
+        <!-- Reborn -->
+        <section class="race">
+            <div class="race-info">
+                <h2>Reborn</h2>
+                <hr>
+                <p><strong>Tempo de vida:</strong> 880 anos</p>
+                <p><strong>Descrição:</strong> Humanóides que retornaram dos mortos, lembrando apenas fragmentos de sua vida passada. São resilientes a venenos e efeitos que afetam a mente.</p>
+                <p><strong>Estimativa de vida:</strong> 880 anos</p>
+                <p><strong>Vagas:</strong> 4</p>
+            </div>
+            <div class="race-image">
+                <img src="img/Reborn.jpg" alt="Reborn" class="image">
+            </div>
+        </section>
+
+        <!-- Kenku -->
+        <section class="race">
+            <div class="race-info">
+                <h2>Kenku</h2>
+                <hr>
+                <p><strong>Tempo de vida:</strong> 150 anos</p>
+                <p><strong>Descrição:</strong> Humanóides parecidos com corvos, incapazes de falar, mas dotados de grande habilidade de imitação. São furtivos e engenhosos.</p>
+                <p><strong>Estimativa de vida:</strong> 50 anos</p>
+                <p><strong>Vagas:</strong> 7</p>
+            </div>
+            <div class="race-image">
+                <img src="img/Kenku.jpg" alt="Kenku" class="image">
+            </div>
+        </section>
+
+        <!-- Tabaxi -->
+        <section class="race">
+            <div class="race-info">
+                <h2>Tabaxi</h2>
+                <hr>
+                <p><strong>Tempo de vida:</strong> 96 anos</p>
+                <p><strong>Descrição:</strong> Felinos antropomórficos, ágeis e curiosos. Conhecidos por habilidades de escalada, são exploradores e possuem um espírito aventureiro.</p>
+                <p><strong>Estimativa de vida:</strong> 80 anos</p>
+
+
+                <p><strong>Vagas:</strong> 6</p>
+            </div>
+            <div class="race-image">
+                <img src="img/Tabaxi.jpg" alt="Tabaxi" class="image">
+            </div>
+        </section>
+
+        <!-- Aarakocra -->
+        <section class="race">
+            <div class="race-info">
+                <h2>Lizardfolk (Povo Lagarto)</h2>
+                <hr>
+                <p><strong>Tempo de vida:</strong> 200 anos</p>
+                <p><strong>Descrição:</strong> Descrição: Humanóides reptilianos com habilidades de sobrevivência em ambientes pantanosos e habilidades de regeneração. São independentes e pragmáticos.</p>
+                <p><strong>Estimativa de vida:</strong> 100 anos</p>
+                <p><strong>Vagas:</strong> 8</p>
+            </div>
+            <div class="race-image">
+                <img src="img/Lizardfolk.webp" alt="Aarakocra" class="image">
+            </div>
+        </section>
+
+        <!-- Firbolg -->
+        <section class="race">
+            <div class="race-info">
+                <h2>Minotauro</h2>
+                <hr>
+                <p><strong>Tempo de vida:</strong> 475 anos</p>
+                <p><strong>Descrição:</strong>  Humanóides com cabeça e cauda de touro, são conhecidos por sua força bruta e capacidade de combate corpo a corpo. Geralmente, vivem em labirintos ou têm afinidade com locais difíceis de navegar</p>
+                <p><strong>Estimativa de vida:</strong> 280 anos</p>
+                <p><strong>Vagas:</strong> 6</p>
+            </div>
+            <div class="race-image">
+                <img src="img/Minotauro.jpg" alt="Firbolg" class="image">
+            </div>
+        </section>
+
+        <!-- Githyanki -->
+        <section class="race">
+            <div class="race-info">
+                <h2>Orc</h2>
+                <hr>
+                <p><strong>Tempo de vida:</strong> 190 anos</p>
+                <p><strong>Descrição:</strong>Guerreiros ferozes e robustos, com habilidades em combate e espírito combativo. Conhecidos pela força bruta</p>
+                <p><strong>Estimativa de vida:</strong> 60 anos</p>
+                <p><strong>Vagas:</strong> 6</p>
+            </div>
+            <div class="race-image">
+                <img src="img/Orc.jpg" alt="Githyanki" class="image">
+            </div>
+        </section>
+
+        <!-- Firbolg -->
+        <section class="race">
+            <div class="race-info">
+                <h2>Plasmoid</h2>
+                <hr>
+                <p><strong>Tempo de vida:</strong> 335 anos</p>
+                <p><strong>Descrição:</strong>  Seres amorfos de material gelatinoso, capazes de mudar sua forma. São resistentes a venenos e têm uma flexibilidade única em combate.</p>
+                <p><strong>Estimativa de vida:</strong> 50 anos</p>
+                <p><strong>Vagas:</strong> 7</p>
+            </div>
+            <div class="race-image">
+                <img src="img/Plasmoid.jpg" alt="Firbolg" class="image">
+            </div>
+        </section>
+
+        <!-- Firbolg -->
+        <section class="race">
+            <div class="race-info">
+                <h2>Owlin</h2>
+                <hr>
+                <p><strong>Tempo de vida:</strong> 124 anos</p>
+                <p><strong>Descrição:</strong>  Humanóides semelhantes a corujas, são rápidos e discretos, com habilidades de voo e visão noturna</p>
+                <p><strong>Estimativa de vida:</strong> 100 anos</p>
+                <p><strong>Vagas:</strong> 6</p>
+            </div>
+            <div class="race-image">
+                <img src="img/Owlin.jpg" alt="Firbolg" class="image">
+            </div>
+        </section>
+
+        <!-- Firbolg -->
+        <section class="race">
+            <div class="race-info">
+                <h2>Hexblood</h2>
+                <hr>
+                <p><strong>Tempo de vida:</strong> 280 anos</p>
+                <p><strong>Descrição:</strong>  Seres meio feéricos, geralmente tocados pela influência de bruxas, possuem habilidades mágicas e características sombrias ou estranhas.</p>
+                <p><strong>Estimativa de vida:</strong> 170 anos</p>
+                <p><strong>Vagas:</strong> 3</p>
+            </div>
+            <div class="race-image">
+                <img src="img/Hexblood.avif" alt="Firbolg" class="image">
+            </div>
+        </section>
+
+        <!-- Firbolg -->
+        <section class="race">
+            <div class="race-info">
+                <h2>Feiticeiros</h2>
+                <hr>
+                <p><strong>Tempo de vida:</strong> 200 anos</p>
+                <p><strong>Descrição:</strong>  Seres mágicos que dominam as artes arcana, manipulando as forças mágicas para alcançar seus objetivos. Eles são conhecidos por sua inteligência, sabedoria e habilidade em lançar feitiços poderosos.</p>
+                <p><strong>Estimativa de vida:</strong> 120 anos</p>
+                <p><strong>Vagas:</strong> 10</p>
+            </div>
+            <div class="race-image">
+                <img src="img/Feiticeiros.jpg" alt="Firbolg" class="image">
+            </div>
+        </section>
+
+        <!-- Firbolg -->
+        <section class="race">
+            <div class="race-info">
+                <h2>Infernais</h2>
+                <hr>
+                <p><strong>Tempo de vida:</strong> 10.000 anos</p>
+                <p><strong>Descrição:</strong>  Seres infernais que foram criados a partir do corpo de Sarfratil e escaparam do submundo. Dividos em categorias, eles possuem capacidade de controlar magia infernal, mas apenas superficialmente.</p>
+                <p><strong>Estimativa de vida:</strong> 50 anos</p>
+                <p><strong>Vagas:</strong> 7</p>
+            </div>
+            <div class="race-image">
+                <img src="img/Infernais.jpg" alt="Firbolg" class="image">
+            </div>
+        </section>
+    </div>
+</body>
+</html>

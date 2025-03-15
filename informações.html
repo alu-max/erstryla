@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página do Servidor</title>
+  <style>
+     body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #D0CDD7;
+            text-align: center;
+        }
+
+        /* Imagem de topo */
+        .topo {
+            width: 100%;
+            height: 350px;
+            background-image: url('img/estryla\ 2.jpg'); /* Substitua pelo caminho correto */
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Menu */
+        .menu {
+            background-color: #0B3948;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            border: 2px solid #ACB0BD;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .menu a:hover {
+            background-color: #416165;
+            color: #D9DBF1;lor: white;
+    }
+
+    .content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 80vh;
+    }
+
+    .button-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .button-container button {
+      background-color: #416165;
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      font-size: 18px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .button-container button:hover {
+      background-color: #0B3948;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="topo"></div>
+
+    <nav class="menu">
+        <a href="inicio.html">Inicio</a>
+        <a href="raças.html">Raças</a>
+        <a href="raçasvip.html">Raça VIP</a>
+        <a href="classe.html">Classe</a>
+        <a href="classevip.html">Classe VIP</a>
+        
+       
+    </nav>
+
+
+  <div class="content">
+    <div class="button-container">
+      <button onclick="window.location.href='info.html'">As dificuldades de cada distrito</button>
+      <button onclick="window.location.href='abençoados.html'">Hierarquia dos abençoados</button>
+    </div>
+  </div>
+
+</body>
+</html>

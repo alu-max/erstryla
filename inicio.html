@@ -1,0 +1,299 @@
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ErstrylaSMP</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #D0CDD7;
+            text-align: center;
+        }
+
+        .topo {
+            width: 100%;
+            height: 350px;
+            background-image: url('img/estryla 2.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .menu {
+            background-color: #0B3948;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            position: relative;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            border: 2px solid #ACB0BD;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .menu a:hover {
+            background-color: #416165;
+            color: #D9DBF1;
+        }
+
+        .menu-button {
+            position: absolute;
+            left: 10px;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .menu-button div {
+            width: 30px;
+            height: 4px;
+            background-color: white;
+            margin: 5px 0;
+        }
+
+        .side-menu {
+            position: fixed;
+            top: 0;
+            left: -250px;
+            width: 250px;
+            height: 100%;
+            background-color: #0B3948;
+            box-shadow: 2px 0px 5px rgba(0,0,0,0.5);
+            transition: left 0.3s ease;
+            padding-top: 60px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .side-menu a {
+            text-decoration: none;
+            color: white;
+            padding: 15px;
+            width: 100%;
+            text-align: center;
+            border-bottom: 1px solid #ACB0BD;
+            box-sizing: border-box;
+        }
+
+        .side-menu a:hover {
+            background-color: #416165;
+        }
+
+        .conteudo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 40px;
+            gap: 50px;
+        }
+
+        .texto {
+            max-width: 50%;
+            text-align: left;
+            font-size: 18px;
+            background-color: #ACB0BD;
+            padding: 15px;
+            border-radius: 5px;
+            color: white;
+        }
+
+        .carrossel {
+            position: relative;
+            width: 500px;
+            height: 350px;
+            overflow: hidden;
+            outline: 3px solid #D9DBF1;
+            outline-offset: 20px;
+        }
+
+        .carrossel img {
+            width: 500px;
+            height: 350px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+
+        .carrossel img.ativo {
+            opacity: 1;
+        }
+
+        .admin-button {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        background: none;
+        border: none;
+        padding: 5px;
+    }
+
+    .admin-img {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        transition: 0.3s;
+    }
+
+    .admin-img:hover {
+        opacity: 0.7;
+    }
+    .entre-button {
+    position: absolute;
+    right: 90px; /* Move o botão mais para a esquerda */
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    padding: 5px;
+}
+
+    .entre-img {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        transition: 0.3s;
+    }
+
+    .entre-img:hover {
+        opacity: 0.7;
+    }
+
+    footer {
+            background-color: #0B3948;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .social-links a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .social-icon {
+            width: 32px;
+            height: 32px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="topo"></div>
+
+    <nav class="menu">
+        <button class="menu-button" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </button>
+        <a href="raças.html">Raças</a>
+        <a href="raçasvip.html">Raça VIP</a>
+        <a href="lore.html">Lore do Server</a>
+        <a href="classe.html">Classe</a>
+        <a href="classevip.html">Classe VIP</a>
+        <a href="informações.html">Informações</a>
+
+        <a href="entrada.php" class="entre-button">
+            <img src="img/perfil.png" alt="Admin" class="entre-img">
+        </a>
+
+        <a href="adm.php" class="admin-button">
+            <img src="img/engrenagem.png" alt="Admin" class="admin-img">
+        </a>
+
+    </nav>
+
+    <div class="side-menu" id="sideMenu">
+        <a href="#">Criar Ficha</a>
+        <a href="tabela.html">Eventos</a>
+        <a href="aprovados.html">Aprovados</a>
+        <a href="cargos.html">Cargos</a>
+        <a href="regras.html">Regra do server</a>
+        <a href="regrasmudae.html">Regra Mudae</a>
+        <a href="regrasrp.html">Regra RP</a>
+        <a href="rank.html">Rank</a>
+    </div>
+
+    <section class="conteudo">
+        <div class="texto">
+            <p>"ErstrylaSMP, servidor de Minecraft Java com tema medieval e dark fantasy, aproveite a experiência!"</p>
+            <p>"ErstrylaSMP é um servidor de Minecraft Java, com foco em roleplay e voltado para o tema medieval e dark fantasy, inicialmente criado para Bedrock e aos poucos evoluindo para algo mais complexo."</p>
+            <p>Desenvolvedor: Alu(baba.yaga.0)</p>
+        </div>
+        <div class="carrossel">
+            <img src="img/estryla.png" alt="Imagem 1" class="ativo">
+            <img src="img/estryla 3.png" alt="Imagem 2">
+            <img src="img/estryla 4.png" alt="Imagem 3">
+        </div>
+    </section>
+
+    <script>
+        let imagens = document.querySelectorAll(".carrossel img");
+        let index = 0;
+
+        function trocarImagem() {
+            imagens[index].classList.remove("ativo");
+            index = (index + 1) % imagens.length;
+            imagens[index].classList.add("ativo");
+        }
+
+        setInterval(trocarImagem, 3000);
+
+        function toggleMenu() {
+            let menu = document.getElementById("sideMenu");
+            if (menu.style.left === "0px") {
+                menu.style.left = "-250px";
+            } else {
+                menu.style.left = "0px";
+            }
+        }
+
+        document.addEventListener("click", function(event) {
+            let menu = document.getElementById("sideMenu");
+            let button = document.querySelector(".menu-button");
+            if (!menu.contains(event.target) && !button.contains(event.target)) {
+                menu.style.left = "-250px";
+            }
+        });
+    </script>
+    <footer>
+        <div class="social-links">
+            <a href="https://www.tiktok.com/@erstrylasmp" target="_blank">
+                <img src="img/tiktok.png" alt="TikTok" class="social-icon">
+                <span>TikTok</span>
+            </a>
+            <a href="https://www.instagram.com/erstrylasmp1/" target="_blank">
+                <img src="img/instagram.png" alt="Instagram" class="social-icon">
+                <span>Instagram</span>
+            </a>
+        </div>
+    </footer>
+    
+</body>
+</html>
